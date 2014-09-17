@@ -1,0 +1,74 @@
+<!DOCTYPE  html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/index.css" rel="stylesheet">
+    <title>System Architecture</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8"><h1 id="system-architecture">System Architecture</h1>
+<h2 id="filesystem-hierarchy-standard-fhs-">Filesystem Hierarchy Standard (FHS)</h2>
+<p>Defines the directory structure and directory contents in Unix and Unix-like operating systems.</p>
+<p>In the FHS all files and directories appear under the root directory <code>/</code></p>
+<ul>
+<li>need to put a full description here <a href="http://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard">http://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard</a></li>
+</ul>
+<p><a href="http://hivelogic.com/articles/using_usr_local">http://hivelogic.com/articles/using_usr_local</a></p>
+<h2 id="shell">Shell</h2>
+<p>In computing, a shell is a user interface for access to a computers operating system services. In general, operating systems use either a command-line interface (CLI) of a graphical user interface (GUI).</p>
+<p>A shell is the generic name for any program that gives you a text-interface to interact with the computer.
+You type a command and the output is shown on screen.</p>
+<p>Many shells have scripting abilities: Put multiple commands in a script and the shell executes them as if they were typed from the keyboard. Most shells offer additional programming constructs that extend the scripting feature into a programming language.</p>
+<p>On most Unix/Linux systems multiple shells are available: bash, csh, ksh, sh, tcsh, zsh just to name a few. They differ in the various options they give the user to manipulate the commands and in the complexity and capabilities of the scripting language.</p>
+<h2 id="bash">Bash</h2>
+<p>Bash is a specific UNIX shell. It is a command processor, Which means that you type commands into it cause actions. It can also read command from a file, called a script. </p>
+<p>The name itself is an acronym, a pun, and a description. As an Acronym, it strands for <em>Bourne-agin shell</em> referring to its objective as a free replacement for the Bourne shell. As a pun, it is expressed that objective in a phrase that sounds similiar to borne again, a term for spiritual rebirth. The term is also descriptive of what it did, bashing together the features of sh, csh, and ksh.</p>
+<p>Both the <code>~/.bashrc</code> and <code>~/.bash_profile</code> are scripts that might be executed when bash is invoked (started up). </p>
+<h4 id="login-shell-nonlogin">Login Shell &amp; Nonlogin</h4>
+<p>A <strong>Login</strong> shell is run as part of the login of the user to the system. Typically used to do any configuration that a user needs/wants to establish his work-environment.</p>
+<p>A <strong>Non-login</strong> shell is run by the user after logging on, or which is run by any automated process which is not coupled to a logged in user.</p>
+<p>A login Shell is a bash shell that is started with - or --login. The following examples invoke a login shell.</p>
+<pre><code><span class="title">sudo</span> su -
+<span class="title">bash</span> <span class="comment">--login</span>
+<span class="title">ssh</span> user@host</code></pre>
+<p>When BASH Is invoked as a login shell, the following files are executed in the displayed order.</p>
+<ol>
+<li><code>/etc/profile</code></li>
+<li><code>~/.bash_profile</code></li>
+<li><code>~/.bash_login</code></li>
+<li><code>~/.profile</code></li>
+</ol>
+<h4 id="interactive-shell">Interactive Shell</h4>
+<p><strong>Interactive:</strong> As the term implies: Interactive means that the commands are run with user-interaction from keyboard. E.g. the shell can prompt the user to enter input.</p>
+<p><strong>Non-interactive:</strong> the shell is probably run from an automated process so it can&#39;t assume if can request input or that someone will see the output. E.g Maybe it is best to write output to a log-file.</p>
+<p><code>~/.bashrc</code> gets executed when you run bash on an interactive shell that is <strong>not</strong> a login shell.</p>
+<pre><code>su<span class="operator"><span class="keyword">do</span> su
+bash
+ssh <span class="keyword">user</span>@host /path/<span class="keyword">to</span>/command</code></pre>
+<h2 id="path">Path</h2>
+<p><code>$PATH</code> is nothing but an environment variable on Linux and OS X like systems.</p>
+<p>It is where the keywords are stored, or the commands that are then turned into actions.</p>
+<p>You can specify a set of directories where executable programs are located using $PATH</p>
+<p>The Path variable is specified as a list of directory names seperated by colon (:)</p>
+<p>When you run a command from a UNIX or UNIX-like shell, the shell looks for the executable file using the directories listed in your PATH variable as a map. For convenience, adding directories to this environment variable means you don’t have to go hunting for a file each time you run it. Following these directions will allow you to add a directory to the search PATH.</p>
+<p>To change your path, you must edit the <code>.profile</code> file in your home directory.</p>
+<h2 id="binary-files">Binary Files</h2>
+<p>A file that is not a text file; it may comtain any type of date encoded in binary form for computer storage and processing purposes. </p>
+<p>In Linux you&#39;ll often hear the term binaries when referring to &quot;binary executable files&quot; or programs. This is because whiles sources of most programs (written in high-level languages) are plain text, complied exectuables are binary. </p>
+<h4 id="where-are-binaries-located">Where are Binaries located</h4>
+<p><code>/bin</code> Essential command binaries that need to be availible for all users</p>
+<p><code>/usr/bin</code> Non-essential command binaries for all users</p>
+<p><code>/usr/local/bin</code> Binaries of personal apps</p>
+<h2 id="terminal-commands">Terminal Commands</h2>
+<p><code>echo</code> is a command that places a string on the terminal. It is a built in command typically used in shell scripts and batch files to output text to a screen or file.</p>
+</div>
+      <div class="col-md-2"></div>
+    </div>
+  </body>
+</html>

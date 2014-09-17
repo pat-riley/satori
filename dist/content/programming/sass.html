@@ -1,0 +1,156 @@
+<!DOCTYPE  html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/index.css" rel="stylesheet">
+    <title>Sass</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8"><h1 id="sass">Sass</h1>
+<p>Sass is a CSS preprossesor. It compiles into CSS that you can then use on your website</p>
+<h2 id="variables">Variables</h2>
+<p>You can use variables to store any type of CSS value.</p>
+<pre><code>$<span class="tag">font</span>-<span class="tag">stack</span>:    <span class="tag">Helvetica</span>, <span class="tag">sans</span>-<span class="tag">serif</span>;
+$<span class="tag">primary</span>-<span class="tag">color</span>: <span class="id">#333</span>;
+
+<span class="tag">body</span> <span class="rules">{
+  <span class="rule"><span class="attribute">font</span>:<span class="value"> <span class="number">100</span>% $font-stack;</span></span>
+  <span class="rule"><span class="attribute">color</span>:<span class="value"> $primary-color;</span></span>
+<span class="rule">}</span></span></code></pre>
+<p>When the Sass is proccessed, it takes those variables and outputs the value.</p>
+<h2 id="nesting">Nesting</h2>
+<p>Allows you to target elements with the same visual heirarchy as HTML.</p>
+<pre><code>nav {
+  ul {
+    <span class="method">margin:</span> <span class="number">0</span>;
+    <span class="method">padding:</span> <span class="number">0</span>;
+    list-<span class="method">style:</span> none;
+  }
+
+  li { <span class="method">display:</span> inline-block; }
+
+  a {
+    <span class="method">display:</span> block;
+    <span class="method">padding:</span> <span class="number">6</span>px <span class="number">12</span>px;
+    text-<span class="method">decoration:</span> none;
+  }
+}</code></pre>
+<p>And this is the output</p>
+<pre><code><span class="tag">nav</span> <span class="tag">ul</span> <span class="rules">{
+  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span>;</span></span>
+  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span>;</span></span>
+  <span class="rule"><span class="attribute">list-style</span>:<span class="value"> none;</span></span>
+<span class="rule">}</span></span>
+
+<span class="tag">nav</span> <span class="tag">li</span> <span class="rules">{
+  <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block;</span></span>
+<span class="rule">}</span></span>
+
+<span class="tag">nav</span> <span class="tag">a</span> <span class="rules">{
+  <span class="rule"><span class="attribute">display</span>:<span class="value"> block;</span></span>
+  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">6</span>px <span class="number">12</span>px;</span></span>
+  <span class="rule"><span class="attribute">text-decoration</span>:<span class="value"> none;</span></span>
+<span class="rule">}</span></span></code></pre>
+<h2 id="partials">Partials</h2>
+<p>You can create partial Sass files that contain snippets of CSS that you can include in other Sass files.  This helps modularize your CSS and easier to maintain. </p>
+<h4 id="naming">Naming</h4>
+<p>Partials always begin with <code>_</code></p>
+<pre><code><span class="filename">_partials.scss</code></pre>
+<h4 id="importing">Importing</h4>
+<p>Css has an import option tha tlets you split your CSS into smaller portions, the problem is that when you use <code>@import</code> in CSS it creates another HTTP request. </p>
+<p>Sass builds upon the current CSS <code>@import</code> but instead of requiring an HTTP request, Sass will take that file that you want to import and combine it with the file you&#39;re importing so you can serve a single CSS file to the web browser. </p>
+<p>Import Sass partials into your main stylesheet with the following</p>
+<pre><code><span class="comment">@</span> <span class="comment">import</span> <span class="comment">"</span>.<span class="string">.</span><span class="string">.</span><span class="comment">/_partialname";</code></pre>
+<p>Import multiple Sass files like so</p>
+<pre><code><span class="comment">@import</span>
+    <span class="comment">"</span>.<span class="string">.</span><span class="comment">/sass/_header"</span>,
+    <span class="comment">"</span>.<span class="string">.</span><span class="string">.</span><span class="comment">/sass/_footer";</code></pre>
+<h2 id="mixins">Mixins</h2>
+<p>A mixin lets you make groups of CSS declarations that you want to reuse throughout your site. You can even pass in values to make your mixins more flexible. Here is a an example using <code>border-radius</code>.</p>
+<pre><code>@mixin border-radius(<span class="char">$r</span>adius) {
+  -webkit-border-<span class="method">radius:</span> <span class="char">$r</span>adius;
+     -moz-border-<span class="method">radius:</span> <span class="char">$r</span>adius;
+      -ms-border-<span class="method">radius:</span> <span class="char">$r</span>adius;
+          border-<span class="method">radius:</span> <span class="char">$r</span>adius;
+}
+
+.box { @include border-radius(<span class="number">10</span>px); }</code></pre>
+<p>To create a mixin, use the <code>@mixin</code> directive and give it a name. We&#39;ve named our mixin <code>border-radius</code>. We&#39;re also using the <code>$radius</code> variable inside the parentheses so we can pass in a radius of whatever we want. After you create your mixin, you can then use it as a CSS decleration starting with <code>@include</code> followed by the name of the mixin.</p>
+<h2 id="extend-inheritance">Extend/Inheritance</h2>
+<p>This is one of the most useful features of Sass. Using <code>@extend</code> lets you share a set of CSS properites from one selector to another. </p>
+<pre><code><span class="preprocessor">.message</span> {
+  border: <span class="number">1</span>px solid <span class="preprocessor">#ccc;</span>
+  padding: <span class="number">10</span>px<span class="comment">;</span>
+  color: <span class="preprocessor">#333;</span>
+}
+
+<span class="preprocessor">.success</span> {
+  @extend <span class="preprocessor">.message</span><span class="comment">;</span>
+  border-color: green<span class="comment">;</span>
+}
+
+<span class="preprocessor">.error</span> {
+  @extend <span class="preprocessor">.message</span><span class="comment">;</span>
+  border-color: red<span class="comment">;</span>
+}
+
+<span class="preprocessor">.warning</span> {
+  @extend <span class="preprocessor">.message</span><span class="comment">;</span>
+  border-color: yellow<span class="comment">;</span>
+}</code></pre>
+<p>What the above code does is allow you to take the CSS properties in <code>.message</code> and apply them to <code>.success</code>, <code>.error</code>, &amp; <code>.warning</code>. The magic happens with the generated CSS, and this helps you avoid having to write multiple class names on HTML elements. This is what it looks like:</p>
+<pre><code><span class="class">.message</span>, <span class="class">.success</span>, <span class="class">.error</span>, <span class="class">.warning</span> <span class="rules">{
+  <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">1</span>px solid <span class="hexcolor">#cccccc</span>;</span></span>
+  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">10</span>px;</span></span>
+  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#333</span>;</span></span>
+<span class="rule">}</span></span>
+
+<span class="class">.success</span> <span class="rules">{
+  <span class="rule"><span class="attribute">border-color</span>:<span class="value"> green;</span></span>
+<span class="rule">}</span></span>
+
+<span class="class">.error</span> <span class="rules">{
+  <span class="rule"><span class="attribute">border-color</span>:<span class="value"> red;</span></span>
+<span class="rule">}</span></span>
+
+<span class="class">.warning</span> <span class="rules">{
+  <span class="rule"><span class="attribute">border-color</span>:<span class="value"> yellow;</span></span>
+<span class="rule">}</span></span></code></pre>
+<h2 id="operators">Operators</h2>
+<p>Doing math in CSS is very helpful. The standard operators are availible.</p>
+<pre><code><span class="class">.container</span> <span class="rules">{ <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100</span>%;</span></span> <span class="rule">}</span></span>
+
+<span class="tag">article</span><span class="attr_selector">[role="main"]</span> <span class="rules">{
+  <span class="rule"><span class="attribute">float</span>:<span class="value"> left;</span></span>
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">600</span>px / <span class="number">960</span>px * <span class="number">100</span>%;</span></span>
+<span class="rule">}</span></span>
+
+<span class="tag">aside</span><span class="attr_selector">[role="complimentary"]</span> <span class="rules">{
+  <span class="rule"><span class="attribute">float</span>:<span class="value"> right;</span></span>
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">300</span>px / <span class="number">960</span>px * <span class="number">100</span>%;</span></span>
+<span class="rule">}</span></span></code></pre>
+<p>We&#39;ve created a very simple fluid grid, based on 960px. Operations in Sass let us do something like take pixel values and convert them to percentages without much hassle. The generated CSS will look like:</p>
+<pre><code><span class="class">.container</span> <span class="rules">{
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100</span>%;</span></span>
+<span class="rule">}</span></span>
+
+<span class="tag">article</span><span class="attr_selector">[role="main"]</span> <span class="rules">{
+  <span class="rule"><span class="attribute">float</span>:<span class="value"> left;</span></span>
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">62.5</span>%;</span></span>
+<span class="rule">}</span></span>
+
+<span class="tag">aside</span><span class="attr_selector">[role="complimentary"]</span> <span class="rules">{
+  <span class="rule"><span class="attribute">float</span>:<span class="value"> right;</span></span>
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">31.25</span>%;</span></span>
+<span class="rule">}</span></span></code></pre>
+</div>
+      <div class="col-md-2"></div>
+    </div>
+  </body>
+</html>

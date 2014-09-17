@@ -1,0 +1,133 @@
+<!DOCTYPE  html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/index.css" rel="stylesheet">
+    <title>Express Tutorial</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8"><h2 id="express-tutorial">Express Tutorial</h2>
+<p><a href="http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/">Tutorial Taken from this site</a></p>
+<ol>
+<li><p>Find where you want the app to live and enter <code>express &lt;name of app&gt;</code></p>
+</li>
+<li><p>Add MongoDB and Monk to <code>package.json</code></p>
+<pre><code> <span class="string">"mongodb"</span>: <span class="string">"<span class="variable">*"</span>,
+ "</span>monk<span class="string">": "</span><span class="variable">*"</span></code></pre>
+</li>
+<li><code>npm install</code> to get those dependancies, this will create a /node_modules folder</li>
+<li><code>mkdir data</code> will create a data directory where mongo will eventually store data</li>
+<li><code>npm start</code> and visit localhost:3000 to see you application</li>
+<li><p>Add this code to the bottom of <code>routes/index.js</code></p>
+<pre><code> router.<span class="keyword">get</span>(<span class="comment">'/helloworld', function(req, res) {</span>
+     res.render(<span class="comment">'helloworld', { title: 'Hello, World!' })</span>
+ });</code></pre>
+<p> This adds another route for a /helloworld page</p>
+</li>
+<li><p>Clone <code>views/index.jade</code> and name the new copy <code>helloworld.jade</code></p>
+</li>
+<li>Add <code>p Hello, World! Welcome to #{title}</code> to the page</li>
+<li><code>npm start</code> and navigate to <code>http://localhost:3000/helloworld</code></li>
+<li>Install mongod</li>
+<li><code>mongod --dbpath /Users/pat/workspace/express_test</code> starts up a mongo server</li>
+<li>Navigate to Mongo Installation directory <code>/usr/local/bin</code> and enter <code>mongo</code></li>
+<li><code>use express_test</code> switches you to the express_test database</li>
+<li><p>Enter the following in the terminal</p>
+<pre><code>db<span class="variable">.usercollection</span><span class="variable">.insert</span>({ <span class="string">"username"</span> : <span class="string">"testuser1"</span>, <span class="string">"email"</span> : <span class="string">"testuser1@testdomain.com"</span> })
+
+then <span class="keyword">this</span> 
+
+db<span class="variable">.usercollection</span><span class="variable">.find</span>()<span class="variable">.pretty</span>()
+
+and then <span class="keyword">this</span> 
+
+newstuff = [{ <span class="string">"username"</span> : <span class="string">"testuser2"</span>, <span class="string">"email"</span> : <span class="string">"testuser2@testdomain.com"</span> }, { <span class="string">"username"</span> : <span class="string">"testuser3"</span>, <span class="string">"email"</span> : <span class="string">"testuser3@testdomain.com"</span> }] db<span class="variable">.usercollection</span><span class="variable">.insert</span>(newstuff);</code></pre>
+</li>
+<li><p>Open <code>app.js</code> and add these lines at the top</p>
+<pre><code><span class="title">var</span> mongo = require(<span class="string">'mongodb'</span>);
+<span class="title">var</span> monk = require(<span class="string">'monk'</span>);
+<span class="title">var</span> db = monk(<span class="string">'localhost:27017/express_test'</span>);</code></pre>
+<p>These lines tell our app we want to talk to MongoDB. we are going to use Monk to do it, and our data base is located at localhost:27017/express_test</p>
+</li>
+<li><p>Add the following lines before the route definitions</p>
+<pre><code>// Make our db accessible to our router
+app<span class="preprocessor">.use</span>(function(req,res,next){
+    req<span class="preprocessor">.db</span> = db<span class="comment">;</span>
+    next()<span class="comment">;</span>
+})<span class="comment">;</span></code></pre>
+</li>
+<li><p>Add the following code to index.js to establish a route to the db.</p>
+<pre><code><span class="comment">/* GET Userlist page. */</span>
+router.<span class="keyword">get</span>(<span class="string">'/userlist'</span>, <span class="keyword">function</span>(req, res) {
+    <span class="keyword">var</span> db = req.db;
+    <span class="keyword">var</span> collection = db.<span class="keyword">get</span>(<span class="string">'usercollection'</span>);
+    collection.find({},{},<span class="keyword">function</span>(e,docs){
+        res.render(<span class="string">'userlist'</span>, {
+            <span class="string">"userlist"</span> : docs
+        });
+    });
+});</code></pre>
+<p>This code is extracting the DB object we passed into our http request, and then using the db connection to fill our &quot;docs&quot; variable with database documents, ie: user data. Then we do a page render just like the other two &quot;gets&quot; in this route file.</p>
+<p>Basically, we tell our app which collection we want to use (&#39;usercollection&#39;) and do a find, then return the results as the variable &quot;docs&quot;. Once we have those documents, we then do a render of userlist (which will need a corresponding Jade template), giving it the userlist variable to work with, and passing our database documents to that variable.</p>
+</li>
+<li><p>Make another directory called <code>userlist.jade</code> and edit the HTML so it looks like...</p>
+<pre><code>extends layout
+
+b<span class="operator"><span class="keyword">lock</span> content
+    h1.
+        <span class="keyword">User</span> List
+    ul
+        each <span class="keyword">user</span>, i <span class="keyword">in</span> userlist
+            li
+                a(href=<span class="string">"mailto:#{user.email}"</span>)= <span class="keyword">user</span>.username</code></pre>
+</li>
+</ol>
+<ol>
+<li><p><code>/Users/pat/workspace/express_test&gt;npm start</code> and open your web browse at <code>http://localhost:3000/userlist</code> to see the results</p>
+</li>
+<li><p>Quickly wire up a route for an add user form. Open <code>/routes/index.js</code> and add the following code above the last module.exports line:</p>
+<pre><code><span class="comment">/* POST to Add User Service */</span>
+router.post(<span class="string">'/adduser'</span>, <span class="keyword">function</span>(req, res) {
+
+    <span class="comment">// Set our internal DB variable</span>
+    <span class="keyword">var</span> db = req.db;
+
+    <span class="comment">// Get our form values. These rely on the "name" attributes</span>
+    <span class="keyword">var</span> userName = req.body.username;
+    <span class="keyword">var</span> userEmail = req.body.useremail;
+
+    <span class="comment">// Set our collection</span>
+    <span class="keyword">var</span> collection = db.<span class="keyword">get</span>(<span class="string">'usercollection'</span>);
+
+    <span class="comment">// Submit to the DB</span>
+    collection.insert({
+        <span class="string">"username"</span> : userName,
+        <span class="string">"email"</span> : userEmail
+    }, <span class="function"><span class="keyword">function</span> <span class="params">(err, doc)</span> {</span>
+        <span class="keyword">if</span> (err) {
+            <span class="comment">// If it failed, return error</span>
+            res.send(<span class="string">"There was a problem adding the information to the database."</span>);
+        }
+        <span class="keyword">else</span> {
+            <span class="comment">// If it worked, set the header so the address bar doesn't still say /adduser</span>
+            res.location(<span class="string">"userlist"</span>);
+            <span class="comment">// And forward to success page</span>
+            res.redirect(<span class="string">"userlist"</span>);
+        }
+    });
+});</code></pre>
+</li>
+<li><p>Test it out, your Live!</p>
+</li>
+</ol>
+</div>
+      <div class="col-md-2"></div>
+    </div>
+  </body>
+</html>

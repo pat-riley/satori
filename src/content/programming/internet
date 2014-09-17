@@ -1,0 +1,19 @@
+##HTTP
+
+The Hypertext Transfer Protocol (HTTP) is designed to enable communications between clients and servers.
+
+HTTP works as a request-response protocol between a client and server.
+
+A web browser may be the client, and an application on a computer that hosts a web site may be the server.
+
+Example: A client (browser) submits an HTTP request to the server; then the server returns a response to the client. The response contains status information about the request and may also contain the requested content.
+
+###Two HTTP request Methods
+
+#####Get
+Request data from a specified resource
+
+#####Post
+Submits data to be processed to a specified resource
+
+##APIs

@@ -1,0 +1,53 @@
+<!DOCTYPE  html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/index.css" rel="stylesheet">
+    <title>Open Framworks</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8"><h1 id="open-framworks">Open Framworks</h1>
+<h2 id="what-is-it">What is it</h2>
+<p>Open Source C++ toolkit designed to assist the creative process by provising a simple and intuitive framework for experimentation. The toolkit is designed to work as a gerneral purpose glue, and wraps together several commonly used libraries including.</p>
+<p><em>OpenGL, GLEW, GLUT, FLFW. libtess2, and Cairo for graphics
+</em>rtAudio, PortAudio or FMOD and Kiss FFT for audio input output and analysis
+<em>FreeType for fonts
+</em>FreeImage for image saving and loading
+<em>Quicktime and videoInput for video playback and grabbing
+</em>Poco for a variety of utilities</p>
+<h2 id="installation">Installation</h2>
+<ol>
+<li>Download openFrameworks</li>
+<li><code>xcode-select --install</code> to get xcode command line tools</li>
+<li>Place OF in root folder, Also known as <code>OF_ROOT</code></li>
+<li>Open up an example and compile</li>
+</ol>
+<h3 id="errors-and-debugging">Errors and Debugging</h3>
+<p>Two major kind of errors</p>
+<p>1.Compilation Errors - typos, bad build settings, they keep your app from being compiled at all. They are usually traced down to a specific line.
+2.Runtime Errors - errors you get after the app has launhed and have all cap names like <code>EXC_BAD_ACCESS</code></p>
+<h2 id="file-structure">File Structure</h2>
+<h4 id="addons">addons</h4>
+<p>The &quot;core&quot; openFrameworks contains only the most essential functionality. Everything in the addons folder can be added to an application piecemeal. This includes stuff like reading an XML file, loading a 3D model, or using the computer vision library, openCV.</p>
+<h4 id="apps">apps</h4>
+<p>This is where the applications that you make will be stored, and where you will be working most of the time. You will notice that there are already a folder in &quot;apps&quot; called &quot;myApps&quot;.</p>
+<h4 id="examples">examples</h4>
+<p>This folder contains example applications that illustrate some of the things that openFrameworks can do.</p>
+<h4 id="libs">libs</h4>
+<p>This folder contains all the libraries that openFrameworks uses as well as the ofCore.</p>
+<h3 id="app-structure">App Structure</h3>
+<p><code>void testAPp::setup(){}</code></p>
+<p>This function is called (i.e.: any code that you’ve put inside the curly brackets runs) at the very beginning of the life of your application, before your program window opens. So, let’s say, for instance, you wanted to set the size of the window. You probably want this to happen before the window actually opens, so setup would be a good place for that.</p>
+<p><code>void testApp::update(){}</code> <code>void testApp::draw(){}</code></p>
+<p>These two functions are called back to back as soon right after setup is called. First update, and then draw, as many times as</p>
+</div>
+      <div class="col-md-2"></div>
+    </div>
+  </body>
+</html>

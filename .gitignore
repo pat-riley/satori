@@ -1,0 +1,8 @@
+#some good defaults
+*.log
+.DS_Store
+*.swp
+
+
+#ignore node modules
+node_modules

@@ -1,0 +1,191 @@
+<!DOCTYPE  html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/index.css" rel="stylesheet">
+    <title>Javascript - Ultimate Reference</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8"><h1 id="javascript-ultimate-reference">Javascript - Ultimate Reference</h1>
+<h2 id="object-oriented-programming">Object Oriented Programming</h2>
+<h4 id="objective-thinking">Objective Thinking</h4>
+<p>In Javascript, get in the mindset that every component can be thought of as an object. When defining the problem and drafting out the steps required to solve that problem remember to always think in terms of OOP. It will save you time in the long run.</p>
+<p>Objects have:</p>
+<p>Properties</p>
+<ul>
+<li>name - user defined</li>
+<li>value - data type</li>
+</ul>
+<p>Events</p>
+<ul>
+<li>Something specific happenning</li>
+</ul>
+<p>Methods</p>
+<ul>
+<li>retrieve or change values of other object&#39;s properties</li>
+</ul>
+<p><em>If there is more than one object, it is known as different instances of that objects</em></p>
+<h2 id="variables">Variables</h2>
+<h3 id="declaring-a-variable">Declaring a Variable</h3>
+<p>Before you can use a variable, you must declare it. <em>Var</em> is a JS keyword and the JS interpreter knows that this keyword creates a variable. Sometimes the name is called an identifier.</p>
+<pre><code><span class="title">var</span> quantity;</code></pre>
+<h5 id="rules-for-naming-variables">Rules for Naming Variables</h5>
+<ol>
+<li>Must begin with a letter, dollar sign<code>$</code> or underscore<code>_</code></li>
+<li>Do not use dash<code>-</code> or period <code>.</code></li>
+<li>You cannot use <strong>keywords</strong> or <strong>reserved</strong> words. Keywords tell the interpreter to do something. View List of Keywords.</li>
+<li>Variables are case sensitive, but do not create <code>variable</code> and <code>Variable</code></li>
+<li>Use a name that describes the kind of information the variable stores. </li>
+<li>Use <code>camelCase</code> if the variable is two words</li>
+</ol>
+<h3 id="assign-value-to-variable">Assign value to Variable</h3>
+<p>After you declare a variable, you can assign a value. The equal sign is an assignment operator. Until you have a value to a variable, programmers say the value is undefined.</p>
+<pre><code><span class="setting">quantity = <span class="value"><span class="number">3</span>:</span></span></code></pre>
+<p>A variable can be anything. </p>
+<h2 id="arrays">Arrays</h2>
+<p>Arrays are a type of variable.</p>
+<p>You should use an array when you are working with a <strong>list</strong> or set of <strong>related</strong> values. Arrays are helpful when you have a list and do not know how many items there will be.</p>
+<h3 id="creating-an-array">Creating an Array</h3>
+<h5 id="aray-ltiteral">Aray Ltiteral</h5>
+<p>You can put any combination of variables into an array. </p>
+<pre><code><span class="title">var</span> colors;                        
+<span class="title">colors</span> = [<span class="string">'white'</span>, <span class="string">'black'</span>, <span class="string">'2'</span>];</code></pre>
+<h5 id="array-constructor">Array Constructor</h5>
+<p>Uses the <em>new</em> keyword to declare and assign all in one statement.</p>
+<pre><code>var colors = <span class="keyword">new</span> <span class="keyword">Array</span>(<span class="attribute">'white</span>',
+                        <span class="attribute">'black</span>',
+                        <span class="attribute">'custom</span>');</code></pre>
+<h3 id="accessing-arrays">Accessing Arrays</h3>
+<p>Values in an array are accessed as if they are in a numbered list.  The first item in the list starts at <code>0</code></p>
+<p>You can assigned a value in an array to a variable.</p>
+<pre><code><span class="title">var</span> itemThree;
+<span class="title">itemThree</span> = colors[<span class="number">2</span>];</code></pre>
+<h5 id="getting-number-of-items-in-an-array">Getting number of items in an array</h5>
+<p>Each array has a property called <code>length</code> which holds the number of items in the array.</p>
+<pre><code><span class="title">var</span> numColors;
+<span class="title">numColors</span> = colors.length;</code></pre>
+<h5 id="changing-value-in-an-array">Changing value in an array</h5>
+<pre><code>
+//Update <span class="keyword">the</span> <span class="keyword">third</span> <span class="property">item</span> <span class="keyword">in</span> <span class="keyword">the</span> array
+colors[<span class="number">2</span>] = 'beige';
+
+//Get <span class="keyword">the</span> element <span class="keyword">with</span> an <span class="property">id</span> <span class="keyword">of</span> colors
+var el = document.getElemendById('colors');
+
+//Replace <span class="keyword">with</span> <span class="keyword">the</span> <span class="keyword">third</span> <span class="property">item</span> <span class="keyword">from</span> <span class="keyword">the</span> array
+el.textContent = colors[<span class="number">2</span>];</code></pre>
+<h2 id="functions">Functions</h2>
+<h3 id="declaring-a-function">Declaring a Function</h3>
+<p>To create a function, you give it a <strong>name</strong> and then write the statements needed to achieve its task inside the curly braces. Funcitons are written in camelCase. </p>
+<pre><code><span class="function"><span class="keyword">function</span> <span class="title">sayHello</span><span class="params">()</span> {</span>
+    <span class="transposed_variable">document.</span>wite(<span class="string">'Hello'</span>);
+}</code></pre>
+<h3 id="calling-a-function">Calling a Function</h3>
+<p>After you Declare a funtion, this is how you call it.</p>
+<pre><code><span class="function"><span class="title">sayHello</span><span class="params">()</span>;</code></pre>
+<h2 id="objects">Objects</h2>
+<h3 id="creating-objects">Creating Objects</h3>
+<h4 id="literal-notation">Literal Notation</h4>
+<p>The easiest and most popular way to create objects.</p>
+<pre><code><span class="keyword">var</span> hotel = {
+    <span class="comment">//Properties</span>
+    name: <span class="string">'Quay'</span>,
+    rooms: <span class="number">40</span>,
+    booked: <span class="number">25</span>,
+
+    <span class="comment">//Methods</span>
+    checkAvailability: <span class="function"><span class="keyword">function</span> {</span>
+        <span class="keyword">return</span> <span class="keyword">this</span>.rooms - <span class="keyword">this</span>.booked;
+    }</code></pre>
+<h4 id="creating-an-object-with-constructor-notation">Creating an object with Constructor Notation</h4>
+<p>The <strong>new</strong> keyword and the object constructor create a blank object. You can then add properties and methods to the object using dot notation. You can use this syntax to add properties and methods to any object you have creates (No matter which notation you used to create it)</p>
+<pre><code><span class="keyword">var</span> hotel = <span class="keyword">new</span> Object();        <span class="comment">//creates an empty object</span>
+
+hotel.name = <span class="string">'Quay'</span>;
+hotel.rooms = <span class="number">40</span>;
+hotel.booked = <span class="number">25</span>;
+
+hotel.checkAvailability = <span class="keyword">function</span>() {
+    <span class="keyword">return</span> <span class="keyword">this</span>.rooms - <span class="keyword">this</span>.booked;
+}</code></pre>
+<p>To create an empty object using literal notation </p>
+<pre><code><span class="title">var</span> hotel = {}</code></pre>
+<h4 id="creating-many-objects-at-once-constructor-notation-">Creating many Objects at Once (Constructor Notation)</h4>
+<p>Sometimes you will want several objects to represent similar things. Object contructors can use a function as a template for creating objects. First, create the template with the objects&#39;s properties and methods. </p>
+<p>The function has three parameters, and each one sets the value of a property in the object. </p>
+<pre><code>function Hotel (name, rooms, booked) {
+
+    <span class="keyword">this</span><span class="variable">.name</span> = name;
+    <span class="keyword">this</span><span class="variable">.rooms</span> = rooms;
+    <span class="keyword">this</span><span class="variable">.booked</span> = booked;
+
+    <span class="keyword">this</span><span class="variable">.checkAvailability</span> = function() {
+        <span class="keyword">return</span> <span class="keyword">this</span><span class="variable">.rooms</span> - <span class="keyword">this</span><span class="variable">.booked</span>;
+    }
+}</code></pre>
+<p>The <strong>This</strong> keyword is used instead of the objects name to indicate that the property or method belongs to the object that <strong>this</strong> function creates.</p>
+<p>Now you can create <em>instances</em> of the object using the constructor function. The <strong>new</strong> keyword followed by a call to the vunction creates a new object. The properties of each object are given as arguments to the function.</p>
+<pre><code><span class="keyword">var</span> quayHotel = <span class="keyword">new</span> Hotel(<span class="string">'Quay'</span>, <span class="number">40</span>, <span class="number">25</span>);
+<span class="keyword">var</span> parkHotel = <span class="keyword">new</span> Hotel(<span class="string">'Park'</span>, <span class="number">120</span>, <span class="number">77</span>);</code></pre>
+<h3 id="using-objects">Using Objects</h3>
+<h4 id="accessing-an-object-dot-notation-">Accessing an object (dot notation)</h4>
+<p>You can access the properites and methods of an object using dot notation. You can also access properties using square brackets. To access a property of an object, you can use <strong>dot notation</strong>, which is shown below.</p>
+<p>The period in dot notation is known as the <strong>member operator</strong>. The property or method on the right is a member of the object on its left. Here, two variables are created to hold the hotel name and the number of vacant rooms. </p>
+<pre><code>var hotelName = hotel<span class="preprocessor">.name</span><span class="comment">;</span>
+var roomsFree = hotel<span class="preprocessor">.checkAvailability</span>()<span class="comment">;</span></code></pre>
+<h4 id="accessing-an-object-square-syntax-">Accessing an object (Square Syntax)</h4>
+<p>You can also access the properties of an object (but not its methods) using square brackett syntax.  This time, the object name is followed by square brackets, and the property name is inside them. </p>
+<pre><code><span class="title">var</span> hotelNAme = hotel[<span class="string">'name'</span>];</code></pre>
+<p>This notation is most commonly used when:</p>
+<ul>
+<li>The name of the property is a number (technically alllowed, but should generally be avoided)</li>
+<li>A variable is being used in place of the property name</li>
+</ul>
+<h4 id="updating-an-object">Updating an Object</h4>
+<p>To update the value properties, use dot notation or square brackets. If the object does no thave the property you are defining it will be added to the object. Note: The square bracket notation does not work for updating methods.</p>
+<pre><code>hotel.name = <span class="attribute">'Park</span>'
+hotel[<span class="attribute">'name</span>'] = <span class="attribute">'Parl</span>';</code></pre>
+<h4 id="deleting-clearing-an-object-properites">Deleting / Clearing an object properites</h4>
+<p>Use the keyword <strong>delete</strong> to delete a property.</p>
+<pre><code><span class="operator"><span class="keyword">delete</span> hotel.name;</span></code></pre>
+<p>To clear the value of a property, you could set it to a blank string</p>
+<pre><code><span class="filename">hotel.name = '';</code></pre>
+<h2 id="errors">Errors</h2>
+<h3 id="try-and-catch">Try and Catch</h3>
+<p>The <code>try</code> statement allows you to define a blokc of code to be tested for errors while it is being executed</p>
+<p>The <code>catch</code> statement allows you to define a block of code to be executed, if an error occurs in the try block.</p>
+<p>The Javascript statements <code>try</code> and <code>catch</code> come in pairs:</p>
+<pre><code>try {
+    B<span class="operator"><span class="keyword">lock</span> <span class="keyword">of</span> code <span class="keyword">to</span> try
+}
+catch(err) {
+    block <span class="keyword">of</span> code <span class="keyword">to</span> handle errors
+}</code></pre>
+<h3 id="throw">Throw</h3>
+<p>When an error occurs, JavaScript will normally stop and generate an error message. The technical term for this is: JavaScript will <em>throw</em> an error.</p>
+<p>The <code>throw</code> statement allows you to create a custom error.</p>
+<p>The technical term for this is <strong>throw an exception</strong></p>
+<pre><code><span class="keyword">throw</span> <span class="string">"Too Big"</span>;    <span class="regexp">//</span><span class="keyword">throw</span> a text
+<span class="keyword">throw</span> <span class="number">500</span>;            <span class="regexp">//</span><span class="keyword">throw</span> a number</code></pre>
+<h3 id="finally">Finally</h3>
+<p>The <strong>finally</strong> statement lets you execute code, after try and catch, regardless of the result:</p>
+<pre><code><span class="keyword">try</span> {
+    Block <span class="keyword">of</span> code <span class="keyword">to</span> <span class="keyword">try</span>    
+}
+catch (err) {
+    Block <span class="keyword">of</span> code <span class="keyword">to</span> handle errors
+}
+finally {
+    Block <span class="keyword">of</span> code <span class="keyword">to</span> be executed regardless <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">try</span>/catch <span class="constant">result</span>
+}</code></pre>
+</div>
+      <div class="col-md-2"></div>
+    </div>
+  </body>
+</html>
