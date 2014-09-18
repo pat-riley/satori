@@ -1,7 +1,7 @@
-#Rhetological Fallacies
+#R hetological Fallacies
 Erros and manipulations of rhetoric and logical thinking
 
-##Appeal to the Mind
+## Appeal to the Mind
 
 ####Appeal to Anonymous Authority
 Using evidence from an unnamed "expert" or "study" or generalized group (like 'scientists') to claim something is true,.
@@ -13,22 +13,22 @@ Claiming something is true because an unqualified or untrustworthy "expert" says
 
 "Over 400 prominent scientists and enginners dispute global warming"
 
-###Appeal to Common Practice
+### Appeal to Common Practice
 Claiming something is true because it's commonly practiced.
 
-"This bank has some problems with corruption. But there's nothing goin on here that doesn't go on in all the other banks."
+"This bank has some problems with corruption. But there's nothing going on here that doesn't go on in all the other banks."
 
-###Appeal to Ignorance
+### Appeal to Ignorance
 A claim is true simply because it has not been proven false (or false because it has not been proven true).
 
 "Nobody has proved to me there is a God. So there is no God"
 
-###Appeal to Incredulity 
+### Appeal to Incredulity 
 Because a claim sound unbelievable, it must be true.
 
 "The eye is an incredibly complex biomechanical machine with thousands of interlocking parts. How could that exist without an intelligent designer."
 
-###Appeal to Money
+### Appeal to Money
 Supposing that, if someone is rich or something is expensive, then it affects the truth of the claim.
 
 "If it costs more, it must be better"
@@ -38,44 +38,44 @@ Supposing something is better because it is new or newer.
 
 "Awesome! The latest version of this operating system is going to make my computer faster and better..."
 
-###Appeal to Popular Belief
-Claiming smething is true because the majority of people believe it.
+### Appeal to Popular Belief
+Claiming something is true because the majority of people believe it.
 
 "Milk is essential for healthy bones."
 
-###Appeal to Probabillity
+### Appeal to Probability
 Assuming because something could happen, it will happen.
 
 "There are billions of galaxies with billions of stars in the universe. So there must be another planet with intelligent life on it"
 
-###Appeal to Tradition
+### Appeal to Tradition
 Claiming something is true because it's (apparently) always been that way.
 
 "Marriage is the union between a man and a woman. Therefore gay marriage is wrong"
 
-##Appeal to Emotions
+## Appeal to Emotions
 
-###Appeal to Consequences of a Belief
+### Appeal to Consequences of a Belief
 Arguing a belief is false because it implies something you'd rather not believe.
 
 "That can't be the Seneator on that sextape, If it were he'd be lying about not knowing her. And he's not the type of man who would lie"
 
-###Appeal to Fear
+### Appeal to Fear
 An argument is made by increasing fear and prejudice toward the opposing side.
 
 "Before you know it there will be more mosques than churches"
 
-###Appeal to Flattery
+### Appeal to Flattery
 Using an irrelevant compliment to slip in an unfounded claim which is accepted along with the compliment.
 
 "Intelligent and sophisticated readers will of course recognize a fallacy like this when they read one"
 
-###Appeal to Nature
+### Appeal to Nature
 Making your claim seem more true by drawing a comparison with the "good" natural world.
 
 "Of course homosexuality is unnatural. You don't see same-sex animals copulating"
 
-###Appeal to Pity
+### Appeal to Pity
 Attempt to induce pity to sway opponents.
 
 "The former dictator is an old, dying man. It's wrong to make him stand trial for these alleged offenses"
@@ -90,24 +90,24 @@ Presenting the oppinent's argument in a way that makes it appear absurd.
 
 "Don't you just hate how those rich Liberal Hollywood actors go on TV to promote their agendas."
 
-###Appeal to Wishful Thinking
+### Appeal to Wishful Thinking
 Suggesting a claim is true or false just because you strongly hope that it is.
 
 "The President wouldn't lie, He's our leader and a good American."
 
-##Faulty Deduction
+## Faulty Deduction
 
 ###Ancedotal Evidence
 Discounting evidence arrived at by a systematic search for testing in favor of a few firsthand stories.
 
 "I'm going to carry on smoking. My grandfater smoked 40 a day and he lived untull he was 90."
 
-###Composition
+### Composition
 Assuming that characteristics of beliefs of some of a group implies the entire group.
 
 "If we combine the best basketball players into a dream team, it will be the best because it is made up of the best players"
 
-###Division
+### Division
 Assuming that characteristics or beliefs of a group automatically apply to any individual member.
 
 "Many conservatives wish to ban gay marriage, discredit climate change, and deny evolution. Therefore all conservatives are homophobic, anti-environmental creationist."

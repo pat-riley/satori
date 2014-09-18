@@ -1,6 +1,6 @@
-#Open Framworks
+# Open Framworks
 
-##What is it
+## What is it
 
 Open Source C++ toolkit designed to assist the creative process by provising a simple and intuitive framework for experimentation. The toolkit is designed to work as a gerneral purpose glue, and wraps together several commonly used libraries including.
 
@@ -11,39 +11,39 @@ Open Source C++ toolkit designed to assist the creative process by provising a s
 *Quicktime and videoInput for video playback and grabbing
 *Poco for a variety of utilities
 
-##Installation
+## Installation
 
 1. Download openFrameworks
 2. `xcode-select --install` to get xcode command line tools
 3. Place OF in root folder, Also known as `OF_ROOT`
 4. Open up an example and compile
 
-###Errors and Debugging
+### Errors and Debugging
 
 Two major kind of errors
 
 1.Compilation Errors - typos, bad build settings, they keep your app from being compiled at all. They are usually traced down to a specific line.
-2.Runtime Errors - errors you get after the app has launhed and have all cap names like `EXC_BAD_ACCESS`
+2.Runtime Errors - errors you get after the app has launched and have all cap names like `EXC_BAD_ACCESS`
 
 ##File Structure
 
-####addons
+#### addons
 
-The "core" openFrameworks contains only the most essential functionality. Everything in the addons folder can be added to an application piecemeal. This includes stuff like reading an XML file, loading a 3D model, or using the computer vision library, openCV.
+The "core" openFrameworks contains only the most essential functionality. Everything in the add ons folder can be added to an application piecemeal. This includes stuff like reading an XML file, loading a 3D model, or using the computer vision library, openCV.
 
-####apps
+#### apps
 
 This is where the applications that you make will be stored, and where you will be working most of the time. You will notice that there are already a folder in "apps" called "myApps".
 
-####examples
+#### examples
 
 This folder contains example applications that illustrate some of the things that openFrameworks can do.
 
-####libs
+#### libs
 
 This folder contains all the libraries that openFrameworks uses as well as the ofCore.
 
-###App Structure
+### App Structure
 
 `void testAPp::setup(){}`
 

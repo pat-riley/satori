@@ -1,5 +1,5 @@
 
-#Exponential Growth in Populations
+# Exponential Growth in Populations
 
 Thomas Malthus exponential law of population Growth
 
@@ -13,7 +13,8 @@ Compared to and has "certain limited resemblance" to the laws of Newtonian mecha
 
 ###Rule of 70
 Roughly explains the time periods involved in exponential growth at a constant rate.
-#####EXAMPLE
+
+##### EXAMPLE
 If growth is measured annually then a 1% growth rate results in a doubling every 70 years.
 The number 70 comes from the observation that the natural log of 2 is about 0.7
 
