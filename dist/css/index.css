@@ -1,11 +1,13 @@
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:900,400,700,500,300);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300);
-
+@font-face {
+    font-family: ostrich-regular;
+    src: url(ostrich-regular.ttf);
+}
 
 body {
   font-family: 'Roboto', sans-serif;
-  margin: 0; //normalize
 }
 
 h1 {
@@ -26,6 +28,30 @@ p {
 li {
 
 }
+.menu {
+  border-bottom: 1px #f2f2f2 solid;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  opacity: .9;
+  filter: blur(10px);
+
+}
+
+.menu a {
+  margin: 0.25em;
+  font-family: 'ostrich-regular';
+  color: #767676;
+  font-size: 45px;
+  color: #767676;
+  line-height: 47px;
+  letter-spacing: 8px;
+  margin-left: 1em;
+  text-decoration: none;
+}
+
 
 .container {
   margin-left: auto;
