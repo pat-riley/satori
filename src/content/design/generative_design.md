@@ -1,6 +1,6 @@
-#Generative Design
+# Generative Design
 
-##Quotes
+## Quotes
 
 
 “Generative Design is not about designing the building – it’s about designing the system that builds a building” – Laws Hesellgren
@@ -17,7 +17,7 @@
 
 “Problems can never be solved at the level they were created” - Einstein
 
-##Introduction
+## Introduction
 
 Human beings have always been tool-makers. It is how we separated off from autonomous agents in nature and began to shape the environment around us. It must have started with a rock, stick, or branch. Something that we just picked up of the ground and after thousands of years we learned how to turn that into tools that would allow us to make marks on cut down trees in order to communicate with other tool - makers when we were not directly in front of them. 
 
@@ -36,17 +36,26 @@ In programming languages - We have created higher level languages that read much
 I propose that we take that kind of thinking - the ability to abstract problem solving into genetical information for ideas and improve not only our own designs, but the process that led us to that design in the first place..
 
 
-##Characteristics
+## Characteristics
 
-Dynamic - constant state flux, activity, or progress
+Note: This next paragraph is filler text. It should be deleted when I’m done with this. I propose that we take that kind of thinking - the ability to abstract problem solving into genetical information for ideas and improve not only our own designs, but the process that led us to that design in the first place..
 
-Responsive - Reactive to a design rule and user needs or promoting
+#### Dynamic
+constant state flux, activity, or progress
 
-Novel - Offers opportunities to present fresh outcomes through iteration, play, and discovery
+#### Responsive
+Reactive to a design rule and user needs or promoting
 
-Emergent - Produces controlled complexity through the interaction of simple components
+#### Novel
+Offers opportunities to present fresh outcomes through iteration, play, and discovery
 
-Iterative - Able to produce numerous outcomes with cohesive visual properties
+#### Emergent
+Produces controlled complexity through the interaction of simple components
+
+#### Iterative
+Able to produce numerous outcomes with cohesive visual properties
+
+Note: This next paragraph is filler text. It should be deleted when I’m done with this. I propose that we take that kind of thinking
 
 * Does not have a clear definition
 * More of an approach 
