@@ -1,9 +1,10 @@
-#Beginnings
+# Beginnings
 
 ### Design
 - [Generative Design](/content/design/generative_design.html)
 - [Universal Design Elements](/content/design/universal_elements.html)
 - [User Experience](content/design/User Experience.html)
+- [L-Systems](content/design/l-system.html)
 
 
 ### Ecology
@@ -12,9 +13,15 @@
 ### Economics
 - [Economic Schools](content/economics/Economic Schools.html)
 
+### Geometry
+- [Geometry Overview](content/geometry/geometry.html)
+- [Symmetry](content/geometry/Symmetry.html)
+- [Penrose Tiling](content/geometry/Penrose_tiling.html)
+- [Wallpaper Groups](content/geometry/wallpaper_groups.html)
+
 ### Health
-- [Daily Routine](content/health/daily_workouts)
-- [Bodyweight Excersices](content/health/bodyweight_exercises.html)
+- [Daily Routine](content/health/daily_workouts.md)
+- [Bodyweight Exercises](content/health/bodyweight_exercises.html)
 
 ### Martial Arts
 - [Styles Overview](content/martial arts/Style_overview.html)
@@ -27,7 +34,7 @@
 
 ### Psychology
 - [Convergent/divergent](content/psychology/convergent_divergent.html)
-- [Meditation Thechniques](content/psychology/meditation_techniques.html)
+- [Meditation Techniques](content/psychology/meditation_techniques.html)
 
 ### Programming
 - [HTML](content/programming/html.html)
@@ -39,6 +46,9 @@
 - [Cognitive Ergonomics](content/programming/cognitive_ergonomics.html)
 - [System Architecture](content/programming/system_architecture.html)
 - [Network Topology](content/programming/network_topology.html)
+- [Internet Protocol](content/programming/internet_protocols.html)
+- [History of HTML](content/programming/html_history.html)
+
 
 
 
@@ -50,8 +60,11 @@
 ### People
 - [Bucky Fuller](content/people/bucky_fuller.html)
 
-###Sociology
+### Sociology
 - [Two-Step Communication Theory](content/sociology/two-step_theory.html)
 
-###Writing
+### Science
+- [Earth Surface](content/science/Earth_1.html)
+
+### Writing
 - [Elements of Style](content/writing/elements_of_style.html)

@@ -1,0 +1,59 @@
+<!DOCTYPE  html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/index.css" rel="stylesheet">
+    <title>L-System</title>
+    <style>
+    </style>
+  </head>
+  <body>
+
+
+    <div class="container">
+      <h1 id="l-system">L-System</h1>
+<p>A Lindenmayer System is a parallel rewriting system and a type of formal grammar. An L-System consists of an alphabet of symbols that can be used to make strings, a collection of production rules that expand each symbol into a larger string of symbols.</p>
+<h2 id="origins">Origins</h2>
+<p>As a biologist, Lindenmayer worked with yeast and filamentous fungi and studied the growth patterns of various types of algae, such as the blue/green bacteria Anabaena catenula. Originally the L-systems were devised to provide a formal description of the development of such simple multicellular organisms, and to illustrate the neighbourhood relationships between plant cells. Later on, this system was extended to describe higher plants and complex branching structures.</p>
+<h2 id="structure">Structure</h2>
+<p>The recursive nature of the L-system rules leads to self-similarity and thereby, fractal-like forms are easy to describe with an L-system. Plant models and natural-looking organic forms are easy to define, as by increasing the recursion level the form slowly &#39;grows&#39; and becomes more complex. Lindenmayer systems are also popular in the generation of artificial life.</p>
+<h2 id="example-1-algae">Example 1: Algae</h2>
+<p>Lindenmayer’s original L-System for modeling the growth of algae.</p>
+<h4 id="variables-">Variables:</h4>
+<p>A B</p>
+<h4 id="constants-">Constants:</h4>
+<p>none</p>
+<h4 id="start-">Start:</h4>
+<p>A</p>
+<h4 id="rules-">Rules:</h4>
+<p>(A → AB) , (B → A)</p>
+<p>which produces:</p>
+<pre><code><span class="setting">n = <span class="value"><span class="number">0</span> : A</span></span>
+<span class="setting">n = <span class="value"><span class="number">1</span> : AB</span></span>
+<span class="setting">n = <span class="value"><span class="number">2</span> : ABA</span></span>
+<span class="setting">n = <span class="value"><span class="number">3</span> : ABAAB</span></span>
+<span class="setting">n = <span class="value"><span class="number">4</span> : ABAABABA</span></span>
+<span class="setting">n = <span class="value"><span class="number">5</span> : ABAABABAABAAB</span></span>
+<span class="setting">n = <span class="value"><span class="number">6</span> : ABAABABAABAABABAABABA</span></span>
+<span class="setting">n = <span class="value"><span class="number">7</span> : ABAABABAABAABABAABABAABAABABAABAAB</span></span></code></pre>
+<pre><code>n=0:         A           start (axiom/initiator)
+            / <span class="command">\
+</span>n=1:       A   B         
+          /|    <span class="command">\
+</span>n=2:     A B     A       
+        /| |     |<span class="command">\
+</span>n=3:   A B A     A B     
+      /| | |<span class="command">\ </span>   |<span class="command">\ </span><span class="command">\
+</span>n=4: A B A A B   A B A</code></pre>
+<p>If we count the length of each string, we obtain the famous Fibonacci sequence of numbers (skipping the first 1, due to our choice of axiom):</p>
+<pre><code><span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">5</span> <span class="number">8</span> <span class="number">13</span> <span class="number">21</span> <span class="number">34</span> <span class="number">55</span> <span class="number">89</span> <span class="keyword">...</span></code></pre>
+<p>For each string, if we count the k-th position from the left end of the string, the value is determined by whether a multiple of the golden ratio falls within the interval (k-1, k). The ratio of A to B likewise converges to the golden mean.</p>
+<p>This example yields the same result (in terms of the length of each string, not the sequence of As and Bs) if the rule (A → AB) is replaced with (A → BA), except that the strings are mirrored.</p>
+<p>This sequence is a locally catenative sequence because G(n)=G(n-1)G(n-2), where G(n) is the n-th generation.</p>
+
+    </div>
+
+  </body>
+</html>

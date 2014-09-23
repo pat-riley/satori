@@ -1,0 +1,67 @@
+# History of HTML
+
+## Sumary
+
+HTML has had a life-span of roughly seven years. During that time, it has evolved from a simple language with a small number of tags to a complex system of mark-up, enabling authors to create all-singing-and-dancing Web pages complete with animated images, sound and all manner of gimmicks. This chapter tells you something about the Web's early days, HTML, and about the people, companies and organizations who contributed to HTML+, HTML 2, HTML 3.2 and finally, HTML 4.
+
+This chapter is a short history of HTML. Its aim is to give readers some idea of how the HTML we use today was developed from the prototype written by Tim Berners-Lee in 1992. The story is interesting - not least because HTML has been through an extremely bumpy ride on the road to standardization, with software engineers, academics and browser companies haggling about the language like so many Ministers of Parliament debating in the House of Commons.
+
+## Beginnings at CERN
+
+The World Wide Web began life in the place where you would least expect it: at CERN, the European Laboratory for Particle Physics in Geneva, Switzerland. CERN is a meeting place for physicists from all over the world, where highly abstract and conceptual thinkers engage in the contemplation of complex atomic phenomena that occur on a minuscule scale in time and space. This is a surprising place indeed for the beginnings of a technology which would, eventually, deliver everything from tourist information, online shopping and advertisements, financial data, weather forecasts and much more to your personal computer.
+
+Tim Berners-Lee is the inventor of the Web. In 1989, Tim was working in a computing services section of CERN when he came up with the concept; at the time he had no idea that it would be implemented on such an enormous scale. Particle physics research often involves collaboration among institutes from all over the world. Tim had the idea of enabling researchers from remote sites in the world to organize and pool together information. But far from simply making available a large number of research documents as files that could be downloaded to individual computers, he suggested that you could actually link the text in the files themselves.
+
+In other words, there could be cross-references from one research paper to another. This would mean that while reading one research paper, you could quickly display part of another paper that holds directly relevant text or diagrams. Documentation of a scientific and mathematical nature would thus be represented as a `web' of information held in electronic form on computers across the world. This, Tim thought, could be done by using some form of hypertext, some way of linking documents together by using buttons on the screen, which you simply clicked on to jump from one paper to another. Before coming to CERN, Tim had already worked on document production and text processing, and had developed his first hypertext system, `Enquire', in 1980 for his own personal use.
+
+Tim's prototype Web browser on the NeXT computer came out in 1990.
+
+## The 90s
+
+The fact that the Web was invented in the early 1990s was no coincidence. Developments in communications technology during that time meant that, sooner or later, something like the Web was bound to happen. For a start, hypertext was coming into vogue and being used on computers. Also, Internet users were gaining in the number of users on the system: there was an increasing audience for distributed information. Last, but not least, the new domain name system had made it much easier to address a machine on the Internet.
+
+## Hypertext
+
+Although already established as a concept by academics as early as the 1940s, it was with the advent of the personal computer that hypertext came out of the cupboard. In the late 1980s, Bill Atkinson, an exceptionally gifted programmer working for Apple Computer Inc., came up with an application called Hypercard for the Macintosh. Hypercard enabled you to construct a series of on-screen `filing cards' that contained textual and graphical information. Users could navigate these by pressing on-screen buttons, taking themselves on a tour of the information in the process.
+
+Hypercard set the scene for more applications based on the filing card idea. Toolbook for the PC was used in the early 1990s for constructing hypertext training courses that had `pages' with buttons which could go forward or backward or jump to a new topic. Behind the scenes, buttons would initiate little programs called scripts. These scripts would control which page would be presented next; they could even run a small piece of animation on the screen. The application entitled Guide was a similar application for UNIX and the PC.
+
+Hypercard and its imitators caught the popular imagination. However, these packages still had one major limitation: hypertext jumps could only be made to files on the same computer. Jumps made to computers on the other side of the world were still out of the question. Nobody yet had implemented a system involving hypertext links on a global scale.
+
+## Domain Name System
+
+By the middle 1980s, the Internet had a new, easy-to-use system for naming computers. This involved using the idea of the domain name. A domain name comprises a series of letters separated by dots, for example: `www.bo.com' or `www.erb.org.uk'. These names are the easy-to-use alternative to the much less manageable and cumbersome IP address numbers.
+
+A program called Distributed Name Service (DNS) maps domain names onto IP addresses, keeping the IP addresses `hidden'. DNS was an absolute breakthrough in making the Internet accessible to those who were not computer nerds. As a result of its introduction, email addresses became simpler. Previous to DNS, email addresses had all sorts of hideous codes such as exclamation marks, percent signs and other extraneous information to specify the route to the other machine.
+
+## HTTP is born 
+
+To Tim Berners-Lee, global hypertext links seemed feasible, but it was a matter of finding the correct approach to implementing them. Using an existing hypertext package might seem an attractive proposition, but this was impractical for a number of reasons. To start with, any hypertext tool to be used worldwide would have to take into account that many types of computers existed that were linked to the Internet: Personal Computers, Macintoshes, UNIX machines and simple terminals. Also, many desktop publishing methods were in vogue: SGML, Interleaf, LaTex, Microsoft Word, and Troff among many others. Commercial hypertext packages were computer-specific and could not easily take text from other sources; besides, they were far too complicated and involved tedious compiling of text into internal formats to create the final hypertext system.
+
+What was needed was something very simple, at least in the beginning. Tim demonstrated a basic, but attractive way of publishing text by developing some software himself, and also his own simple protocol - HTTP - for retrieving other documents' text via hypertext links. Tim's own protocol, HTTP, stands for HyperText Transfer Protocol. The text format for HTTP was named HTML, for HyperText Mark-up Language; Tim's hypertext implementation was demonstrated on a NeXT workstation, which provided many of the tools he needed to develop his first prototype. By keeping things very simple, Tim encouraged others to build upon his ideas and to design further software for displaying HTML, and for setting up their own HTML documents ready for access.
+
+## HTML borrows from SGML
+
+The HTML that Tim invented was strongly based on SGML (Standard Generalized Mark-up Language), an internationally agreed upon method for marking up text into structural units such as paragraphs, headings, list items and so on. SGML could be implemented on any machine. The idea was that the language was independent of the formatter (the browser or other viewing software) which actually displayed the text on the screen. The use of pairs of tags such as <TITLE> and </TITLE> is taken directly from SGML, which does exactly the same. The SGML elements used in Tim's HTML included P (paragraph); H1 through H6 (heading level 1 through heading level 6); OL (ordered lists); UL (unordered lists); LI (list items) and various others. What SGML does not include, of course, are hypertext links: the idea of using the anchor element with the HREF attribute was purely Tim's invention, as was the now-famous `www.name.name' format for addressing machines on the Web.
+
+Basing HTML on SGML was a brilliant idea: other people would have invented their own language from scratch but this might have been much less reliable, as well as less acceptable to the rest of the Internet community. Certainly the simplicity of HTML, and the use of the anchor element A for creating hypertext links, was what made Tim's invention so useful.
+
+## Discussion Begins 
+
+Far from keeping his ideas private, Tim made every attempt to discuss them openly online across the Internet. Coming from a research background, this was quite a natural thing to do. In September 1991, the WWW-talk mailing list was started, a kind of electronic discussion group in which enthusiasts could exchange ideas and gossip. By 1992, a handful of other academics and computer researchers were showing interest. Dave Raggett from Hewlett-Packard's Labs in Bristol, England, was one of these early enthusiasts, and, following electronic discussion, Dave visited Tim in 1992.
+
+Here, in Tim's tiny room in the bowels of the sprawling buildings of CERN, the two engineers further considered how HTML might be taken from its current beginnings and shaped into something more appropriate for mass consumption. Trying to anticipate the kind of features that users really would like, Dave looked through magazines, newspapers and other printed media to get an idea of what sort of HTML features would be important when that same information was published online. Upon return to England, Dave sat down at his keyboard and resolutely composed HTML+, a richer version of the original HTML.
+
+## Images
+
+Meanwhile on the other side of the world, Tim's ideas had caught the eye of Joseph Hardin and Dave Thompson, both of the National Center for Supercomputer Applications, a research institute at the University of Illinois at Champaign-Urbana. They managed to connect to the computer at CERN and download copies of two free Web browsers. Realizing the importance of what they saw, NCSA decided to develop a browser of their own to be called Mosaic. Among the programmers in the NCSA team were Marc Andreessen - who later made his millions by selling Web products - and the brilliant programmer Eric Bina - who also became rich, courtesy of the Web. Eric Bina was a kind of software genius who reputedly could stay up three nights in succession, typing in a reverie of hacking at his computer.
+
+
+Early Web enthusiasts exchanged ideas and gossip over an electronic discussion group called WWW-talk. This was where Dave Raggett, Tim Berners-Lee, Dan Connolly and others debated how images (photographs, diagrams, illustrations and so on) should be inserted into HTML documents. Not everyone agreed upon the way that the relevant tag should be implemented, or even what that tag should be called. Suddenly, Marc Andreessen appeared on WWW-talk and, without further to-do, introduced an idea for the IMG tag by the Mosaic team.
+
+It was quite plain that the others were not altogether keen on the design of IMG, but Andreessen was not easily redirected. The IMG tag was implemented in the form suggested by the Mosaic team on its browser and remains to this day firmly implanted in HTML. This was much to the chagrin of supporters back in academia who invented several alternatives to IMG in the years to come. Now, with the coming of HTML 4, the OBJECT tag potentially replaces IMG, but this is, of course, some years later.
+
+
+
+## Sources 
+http://www.w3.org/People/Raggett/book4/ch02.html
