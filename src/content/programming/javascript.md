@@ -22,10 +22,11 @@ Methods
 
 *If there is more than one object, it is known as different instances of that objects*
 
-##Variables
+## Variables
 
-###Declaring a Variable
+### Declaring a Variable
 Before you can use a variable, you must declare it. *Var* is a JS keyword and the JS interpreter knows that this keyword creates a variable. Sometimes the name is called an identifier.
+###### 1 - Declaring Variable
 ```
 var quantity;
 ```
@@ -39,6 +40,8 @@ var quantity;
 
 ###Assign value to Variable
 After you declare a variable, you can assign a value. The equal sign is an assignment operator. Until you have a value to a variable, programmers say the value is undefined.
+
+###### 2 - Assign Value to Variable
 ```
 quantity = 3:
 ```

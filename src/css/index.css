@@ -10,6 +10,16 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+
+a {
+  color: #00D512;
+}
+
+::selection {
+    color: #626262;
+    background: #00FF2C;
+}
+
 h1 {
   font-size: 7em;
   color: #626262;
@@ -22,6 +32,7 @@ h2 {
   line-height: 53px;
   padding-bottom: 15px;
   border-bottom: 2px #626262 solid;
+  margin-top: 2em;
 }
 
 h3 {
@@ -38,6 +49,24 @@ h4 {
   line-height: 25px;
 }
 
+
+h6 {
+  font-family: Roboto-Medium;
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 19px;
+  letter-spacing: 2px;
+  background-color: #726D66;
+  padding: 1em;
+  margin-bottom: -1.2em;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 5px;
+}
+
 p {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
@@ -51,9 +80,9 @@ p {
 
 li {
   font-family: 'Roboto';
-  font-size: 15px;
+  font-size: 17px;
   color: #5B5752;
-  line-height: 50px;
+  line-height: 38px;
 }
 
 
@@ -89,13 +118,28 @@ li {
   max-width: 800px;
 }
 
-
-pre {
-  background-color: #EFEFEF;
-  padding: 1em;
-  border-radius: .25em;
+code {
+  background-color: #FCFCFC;
+  border-radius: 4px;
+  padding: .2em 0.4em .2em .4em;
+  font-family: AndaleMono;
+  font-size: 19px;
+  color: #5B5752;
+  border: 1px rgba(91, 87, 82, 0.19) solid;
 }
 
-.code {
+pre {
+  background-color: #FCFCFC;
+  padding: 1em;
+  font-family: AndaleMono;
+  font-size: 19px;
+  color: #5B5752;
+  line-height: 21px;
+  border: 1px rgba(91, 87, 82, 0.19) solid;
+  margin-bottom: 2.5em;
+}
 
+pre code {
+  border: none;
+  line-height: 28px;
 }

@@ -40,6 +40,8 @@ I propose that we take that kind of thinking - the ability to abstract problem s
 
 Note: This next paragraph is filler text. It should be deleted when I’m done with this. I propose that we take that kind of thinking - the ability to abstract problem solving into genetical information for ideas and improve not only our own designs, but the process that led us to that design in the first place..
 
+
+
 #### Dynamic
 constant state flux, activity, or progress
 
