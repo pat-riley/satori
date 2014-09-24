@@ -18,19 +18,26 @@ Roughly explains the time periods involved in exponential growth at a constant r
 If growth is measured annually then a 1% growth rate results in a doubling every 70 years.
 The number 70 comes from the observation that the natural log of 2 is about 0.7
 
-##Common Terms
+## Common Terms
 
 
-Species Population  - All individuals of a species
+Species Population
+All individuals of a species
 
-Metapopulation - A set of spatially disjunct population, among which there is some immigration
+#### Metapopulation
+A set of spatially disjunct population, among which there is some immigration
 
-Population - A group of conspecific individuals that is demographically, genetically, or spatially disjunct from other groups of individuals
+#### Population
+A group of conspecific individuals that is demographically, genetically, or spatially disjunct from other groups of individuals
 
-Aggregation - A spatially clustered group of individuals
+#### Aggregation
+A spatially clustered group of individuals
 
-Deme - A group of individuals more genetically similar to each other than to other individuals, usually with some degree of spatial isolation as well.
+#### Deme
+A group of individuals more genetically similar to each other than to other individuals, usually with some degree of spatial isolation as well.
 
-Local Population - A group of individuals within an investigator-delimited area smaller than the geographic range of the species and often within a population (as defined above) A local population could be a disjoint population as well.
+#### Local Population
+A group of individuals within an investigator-delimited area smaller than the geographic range of the species and often within a population (as defined above) A local population could be a disjoint population as well.
 
-Subpopulation - An arbitrary spatially delimited subset of individuals from within a population.
+#### Subpopulation
+An arbitrary spatially delimited subset of individuals from within a population.

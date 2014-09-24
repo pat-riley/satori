@@ -38,9 +38,7 @@ I propose that we take that kind of thinking - the ability to abstract problem s
 
 ## Characteristics
 
-Note: This next paragraph is filler text. It should be deleted when I’m done with this. I propose that we take that kind of thinking - the ability to abstract problem solving into genetical information for ideas and improve not only our own designs, but the process that led us to that design in the first place..
-
-
+I propose that we take that kind of thinking - the ability to abstract problem solving into genetical information for ideas and improve not only our own designs, but the process that led us to that design in the first place..
 
 #### Dynamic
 constant state flux, activity, or progress
@@ -66,7 +64,7 @@ Note: This next paragraph is filler text. It should be deleted when I’m done w
 can be used for problem solving , or art
 *It can be a solution, or a launching pad to go further
 
-##Generative Process
+## Generative Process
 
 The Generative Design Process can not be seen as truly innovative and different until compared to the traditional design process. It is important to note however, that this new process is not a means to replace traditional methods,, but rather - just another tool in the designers bag. When to use it becomes important and we have discussed this in the previous chapter.
 
@@ -87,56 +85,55 @@ Generative Process Outlined
 6. Modifies the rules
 7. Modifies the source code
 
-##Emulating Nature
+## Emulating Nature
 
 Here are some common concepts that are present throughout nature.
 
-Golden Ratio - A sacred Ratio
+#### Golden Ratio
+A sacred Ratio
 
-L-System - A set of instructions that, when implemented, resembles the patterns found in tree branches 
-	Variables:	A B
-	Constants:	None
-	Start:		A
-	Rules:		(A > AB) ; (B > A)
+#### L-System
+A set of instructions that, when implemented, resembles the patterns found in tree branches 
 
-Fibonacci Sequence -
+#### Fibonacci Sequence
 
-Constructal Law - 
+#### Constructal Law
 
-Swarming - 
+#### Swarming
 
-Fractals - 
+#### Fractals
 
-Voroni Diagram - 
+#### Voroni Diagram
 
-Tessellation's - 
+#### Tessellation's
 
-Wallpaper Groups - 
+#### Wallpaper Groups
 
-##Generative Toolbox
+## Generative Toolbox
+
 Processing
 
 Open Frameworks
 
 OSC Basics
 
-##Programming Concepts
+## Programming Concepts
 
 These are some concepts that are central to programming. Computer programming was developed in part to replicate human thought processes so many of these concepts that we will go over here will have parallels in your day to day thoughts process.
 
 Together these concepts illustrated form the framework for how we as human beings and how our computers end up processing as well.
 
-Repitition - doing something over and over again for the sake of	
+Repetition - doing something over and over again for the sake of	
 	a) Getting better at it (building neural networks) - strength and conditioning
 	b) Trying out new experiments (changing variables each time)
 
 Randomness - used to create variations to break up struct regularity of the computer. Human hands in randomness make a bell curve. Different types of random simulated - so that it appears to be random.
 
-Emergence - Simple rules that yield highly complex results, most commonly reffered to as the butterfly effect. Many organic shapes are domed following the result of a simple algorith, that consists of two isntructions.
+Emergence - Simple rules that yield highly complex results, most commonly referred to as the butterfly effect. Many organic shapes are domed following the result of a simple algorithm, that consists of two instructions.
 
 Simulation - Forced directed layout
 
-##Tool Building
+## Tool Building
 
 One of the most exciting aspects of generative design is the ability to create and use new tools that have never existed before.
 
@@ -145,7 +142,7 @@ These tools can do everything from
 	b) Create results that are inhuman
 	c) Create interesting combinations that one would never quite expect to see
 	
-##Philosophy
+## Philosophy
 
 I have an inherent belief that all of our solutions, designs, art, and innovation does not truly come from our individual minds. To me, the concept that someone “came up” with a design is outrageous! Now this is not to say that there is not merit within our own human ingenuity, quite the contrary actually, I believe that human beings are able to do wonderful and infinitely complex things. But to say that they came up with these ideas “on our own” is a bold statement.
 

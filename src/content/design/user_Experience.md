@@ -1,6 +1,6 @@
-#User Experience
+# User Experience
 
-###Fitt's Law
+### Fitt's Law
 
 
 Predicts that the time required to rapidly move to a target area is a function of the distance to the target and the size of the target.

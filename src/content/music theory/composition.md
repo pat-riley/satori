@@ -1,6 +1,6 @@
-#Composition
+# Composition
 
-##Basics
+## Basics
 
 ###Foreground vs Background
 - human perception happens on multiple levels, and our attention is not equal
@@ -33,7 +33,7 @@ Difference between visual and auditory information in music - although a violin 
 
 >“ convincing continuity : one must have that above all other things” - Elliott Carter
 
-####Musical Unity and Variety
+#### Musical Unity and Variety
 - It is convention to speak of unity and variety as the cornerstones of artistic structure
 - Unity is difficult to notion in music because it relays on memory
 - Temporal nature of music does not permit perception of the whole, except in retrospect (or as experience spreads out over time)

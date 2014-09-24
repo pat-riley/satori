@@ -13,21 +13,21 @@ Also known as...
 Originated by Vilfredo Pareto, an italian economist who notices that 20 percent of the Italian people possessed 80 percent of the wealth
 
 
-###Use in design
+### Use in design
 - focusing resources and realizing greater efficiency in design
 - When redesigning systems to make them more efficient, focusing on aspects of the system beyond the critical 20 percent yields diminishing results, Designers should focus on the 20% of the highly used features
 
-###Examples
+### Examples
 - 80% of a products usage involves 20% of it’s features
 - The 20% of most commonly used features are located in the easy to access toolbar
 
 
-###Approaches to take
+### Approaches to take
 1. Make a list of all the features
 2. Find the 20% that are most commonly used
 3. Design the system to make those features more efficient
 
-##Accessibility
+## Accessibility
 
 *Objects and environments should be designed to be usable without modification, by as many people as possible.*
 
@@ -44,7 +44,7 @@ Four characteristics of accessible design
 4. Forgiveness
 
 
-###Perceptibility
+### Perceptibility
 Achieved when everyone can use the design, regardless of sensory abilities.
 - present information using redundant coding methods (textual, iconic, tactile)
 - compatibility with assistive sensory technologies (alt tags)     
@@ -91,7 +91,7 @@ Two types of advances organizers
 2. Comparative
 
 
-####Expository
+#### Expository
 - useful when audiences have little or no knowledges similar to the information being taught
 - ex: teaching an audience who has no ideas about forklifts the general concept of a forklift first
 Comparative
@@ -99,7 +99,7 @@ Comparative
 - ex: teaching an audience of forklift drivers the differences between old forklifts
 
 
-##Development Cycle
+## Development Cycle
 
 Requirements, Design, Development, Testing
 
@@ -109,15 +109,15 @@ Requirements
 - don’t ask people what they want, because they don’t know
 
 
-####Design
+#### Design
 - design requirements are translated into a form that yields a set of specifications
 - careful research of existing analogous solutions
 
-####Development
+#### Development
 - design specifications are transformed into an actual product
 - goal is to accurately represent the design specifications
 
-####Testing
+#### Testing
 - product is tested to ensure that it meets design requirements
 - must be accepted by target audience.
 

@@ -1,14 +1,14 @@
-#R hetological Fallacies
+# Rhetological Fallacies
 Erros and manipulations of rhetoric and logical thinking
 
 ## Appeal to the Mind
 
-####Appeal to Anonymous Authority
+### Appeal to Anonymous Authority
 Using evidence from an unnamed "expert" or "study" or generalized group (like 'scientists') to claim something is true,.
 
 "They say that it takes 7 years to digest chewing gum"
 
-###Appeal to Authority
+### Appeal to Authority
 Claiming something is true because an unqualified or untrustworthy "expert" says it is.
 
 "Over 400 prominent scientists and enginners dispute global warming"
@@ -33,7 +33,7 @@ Supposing that, if someone is rich or something is expensive, then it affects th
 
 "If it costs more, it must be better"
 
-###Appeal to Novelty
+### Appeal to Novelty
 Supposing something is better because it is new or newer.
 
 "Awesome! The latest version of this operating system is going to make my computer faster and better..."
@@ -80,12 +80,12 @@ Attempt to induce pity to sway opponents.
 
 "The former dictator is an old, dying man. It's wrong to make him stand trial for these alleged offenses"
 
-###Appeal to Ridicule
+### Appeal to Ridicule
 Attept to induce pity to sway opponents.
 
 "Faith in God is like believing in Santa Clause and the Tooth Fairy"
 
-###Appeal to Spite
+### Appeal to Spite
 Presenting the oppinent's argument in a way that makes it appear absurd.
 
 "Don't you just hate how those rich Liberal Hollywood actors go on TV to promote their agendas."
@@ -117,12 +117,12 @@ Assuming that because something is nicely design or beatifully visualized it's m
 
 "Just look at the handwiritng of that death threat"
 
-###Gambler's Fallacy
+### Gambler's Fallacy
 Assuming a historu of independent outcomes will somehoe affect future outcomes.
 
 "I've flipped this coin 10 times in a row and it's been heads. Therefore the next coin flip is more likely to come up tails."
 
-###Hasty Generalization
+### Hasty Generalization
 Drawing a general conclusion from a tiny sample.
 
 "I just got cut off by the woman driver in front. Woman can't drive"
@@ -132,12 +132,12 @@ Drawing a quick conslusions without fairly considering relevant (and easily avai
 
 "She wants birth control in her medical cover? What a slut!"
 
-###Middle Ground
+### Middle Ground
 Assuming because two oppositions arguments have merit, the answer must lie somewhere between them.
 
 "I rear ended your car but I don't think I should pay for the damage. You think I should pay for all that damage. A fair compromise would be to split the bill in half."
 
-###Perfectionist Fallacy
+### Perfectionist Fallacy
 Assuming that the only option on the table is perfect success, then rejecting anything that will not work perfectly.
 
 "What's the point of this anti-drunk driving campaign? People are still going to drink and drive no matter what."
@@ -152,12 +152,12 @@ Rejecting a claim because of a belief that truth is relative to a person or grou
 
 "That's pergaps true for you. But it's not true for me"
 
-###Spotlight
+### Spotlight
 Assuming an observation from a small sample size applies to the entire group.
 
 "This large shoe manufacturer employs children in sweatshops. Therefore all shoe companies are evil child-slave owners"
 
-###Sweeping Generalization
+### Sweeping Generalization
 Apply a general rule too broadly.
 
 "Those young men rioted because they lacked morally responsible fathers"
@@ -169,64 +169,64 @@ Assuming because two things share a property, that makes them the same thing.
 
 ##Garbled Cause & Effect
 
-###Affirming the Consequent
+### Affirming the Consequent
 Assuming there's only one explanation for the observation you're making.
 
 "Marriage often results on the birth of children. So that's the reason why it exists."
 
-###Circular Logic
+### Circular Logic
 A conclusion is derived from a premise based on the conclusion.
 
 "Stripping privacy rights only matters to those with sometimes to hide. You must have something to hide if your opposing stripping privacy rights"
 
-###Cum Hoc Ergo Propter Hoc
+### Cum Hoc Ergo Propter Hoc
 Claiming two events that occcur together must have a cause-and-effect relationship. (Correlation = Cause)
 
 "Teenages in gangs listen to rap music with violent themes. Rap music insipres violence in teenagers."
 
-###Ignoring a Common Cause
+### Ignoring a Common Cause
 Claiming one event must have caused the other when a third (unlooked for) event is probably the cause.
 
 "We had the 60s sexual revolution, and now people are dying of AIDS"
 
-###Post Hoc Ergo Propter Hoc
+### Post Hoc Ergo Propter Hoc
 Claiming that because one event followed another, it was also caused by it.
 
 "Since the election or the President more people than ever are unemplyed. There the President has damaged the economy."
 
-###Two Wrongs make a Right
+### Two Wrongs make a Right
 Assuming that if one is commited, anothe wrong will cancel it out.
 
 "Sure - the conditions in this prison are cruel and dehumanising, But these inmates are criminals!"
 
-##Manipulating Content
+## Manipulating Content
 
-###Ad Hoc Rescue
+### Ad Hoc Rescue
 Trying to save a cherished belief by repeatedly revising the argument to explain away problems.
 
 "...but apart from better sanitation, medicine, education, irrigation, public health, a freshwater system and public order...what have the Romans done for us?"
 
-###Begging the Question
+### Begging the Question
 Hiding other contributory factors and supporitng the truth of your claim without any evidence other than the conclusion of your claim.
 
 "All illegal drugs are harmful - that's why they're illegal"
 
-###Biased Generalizing
+### Biased Generalizing
 Generalizing from an unrepresentaitve sample to increase the strength of your argument.
 
 "Our website poll found that 90% of internet users oppose online piracy laws"
 
-###Confirmation Bias
+### Confirmation Bias
 Cherry picking evidence that supports your idea while ignoring contractiding evidence.
 
 "It's obvious 9-11 was an American-government led conspiracy to justify war in Iraw and Afganisatan. No plane hit the Pentagon. The Twin Towers collapse was a controlled demolition."
 
-###False Dilemma
+### False Dilemma
 Presenting two opposing options as the only two options while hiding alternatives.
 
 "We are going to have to cut the education budget or go deeper into debt. We can't afford to go deeper into debt. So we'll have to cut the education budget."
 
-###Lie
+### Lie
 An outright untruth repeated knowingly as a fact.
 
 "I did not have sexual relations with that woman."
@@ -234,52 +234,52 @@ An outright untruth repeated knowingly as a fact.
 ### Misleading Vividness
 Describing an occurence in vivid detail, even if it is a rare occurence, to convince someone that it is a problem.
 
-###Red Herring
+### Red Herring
 Introducting irrelevant material to the arugment to distract and lead towards a different conclusion. 
 
 "Why should the Senator account for irregularities in his expenses? After all, there are other senators who have done far worse things"
 
-###Slippery Slope
+### Slippery Slope
 Assuming a relatively small first step will inevitably lead to a chain of related (negative) events.
 
-###Supressed Evidence
+### Supressed Evidence
 Intentionally failing to use significant and relevant information which counts against one's own conclusions.
 
 "the Iraqu regime possesses and produces chemical and biological weapons. It is seeking nuclear weapons."
 
-###Unfalsiifiability
+### Unfalsiifiability
 Offering a claim that cannot be proven false, because there is no way to check if it is false or not.
 
 "He lied because he's possessed by demons"
 
-##On the Attack
+## On the Attack
 
-###Ad Hominem
+### Ad Hominem
 Bypassing the argument by launching an irrelevant attack on the person and not their claim.
 
 "Anyone that says we should build the ground Zero mosque is an American-Hating Liberal"
 
-###Burden of Proof
+### Burden of Proof
 I don't need to prove my claim - you must prove it is false.
 
 "I maintain long-term solar cycles are the cause of global warning. Show me I'm wrong'
 
-###Circumstance Ad Hominem
+### Circumstance Ad Hominem
 Stating a claim isn't credible only because of the advocate's interests in their claim.
 
 "A study into the whealth risks of mobile phones involved mobile phone companies. Therefore, the study cannot be trusted"
 
-##Genetic Fallacy
+## Genetic Fallacy
 Attacking the cause of orgin of a claim, rather than it's subsatnce.
 
 "Of coarse mainstream liberal media are not going to say Barack Oboma is a Muslim"
 
-##Guilt by Association
+## Guilt by Association
 Discrediting an Idea of claim by associating it with an undesirable group of person or group.
 
 "Oh you want to relwax the anti-terrorism laws just like the terrorosts want us to do. Are you saying you support terrorism"
 
-##Straw Man
+## Straw Man
 Creating a distored or simplified caricature of your oppenent arugment, and they arguing against that.
 
 "Yo say Isreal should stop building settlements on the West Bank in violation of treaty. So you're saying Isreal dones'nt have the right to be a nation'"

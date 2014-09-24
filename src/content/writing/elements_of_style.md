@@ -1,10 +1,10 @@
-#Elements of Style
+# Elements of Style
 
 This book aims to give in brief space the principal requirements of plain English style. It only concentrates on a few essential rules. The goal is to improve ones compositional skills and eliminate common violations.
 
-##Elementary Rules of Usage
+## Elementary Rules of Usage
 
-####Form the posessive singular of nouns by adding 's'
+#### Form the posessive singular of nouns by adding 's'
 
 Follow this rule whatever the final cononant. Thus write,
 
@@ -16,7 +16,7 @@ Follow this rule whatever the final cononant. Thus write,
 
 If you are a righteous fellow, Exepctions are the possessive of ancient proper names.
 
-####In a series of three or more terms with a single conjunction, use a comma after each term except the last.
+#### In a series of three or more terms with a single conjunction, use a comma after each term except the last.
 
 Thus write, 
 
@@ -26,7 +26,7 @@ Thus write,
 
 >He opened the letter, read it, and made a note
 	
-####Enclose parenthetic expressions between commas
+#### Enclose parenthetic expressions between commas
 
 >The best way to see a country, unless you are pressed for time, is to travel on foot`
 
@@ -48,7 +48,7 @@ To illustrate the third rule above, concider the following example.
 
 >The audience, which had at first been indifferent, became more and more interested.
 
-####Place a comma before a conjunction introducing a co-ordinate clause.
+#### Place a comma before a conjunction introducing a co-ordinate clause.
 >The early records of the city have disappeared, and the story of its first years can no longer be reconstructed.
 
 Sentances of this type, isolated from their context, could benefit from a rewrite. They make complete sense when the comma is reached but the rest of the sentence comes across as an afterthought.
