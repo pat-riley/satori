@@ -58,3 +58,54 @@ For each string, if we count the k-th position from the left end of the string, 
 This example yields the same result (in terms of the length of each string, not the sequence of As and Bs) if the rule (A → AB) is replaced with (A → BA), except that the strings are mirrored.
 
 This sequence is a locally catenative sequence because G(n)=G(n-1)G(n-2), where G(n) is the n-th generation.
+
+## Example in Processing
+```
+String current ="A";      //start with axiom
+int count = 0;            //keep track of how many generations
+
+void setup() {
+  // 
+  println("Generation" + count + "; " + current); 
+}
+
+void draw() {
+}
+
+
+void mousePressed() {
+  String next = "";
+  for (int i = 0; i < current.length(); i++) {
+    char c = current.charAt(i);
+    if (c == 'A') {
+      next += "AB";
+    }  else if (c == 'B') {
+      next += "A";
+    }
+  }
+  current = next;
+  count++;
+  println("Generation " + count + ": " + current);
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

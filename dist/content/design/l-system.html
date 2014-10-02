@@ -52,6 +52,33 @@
 <p>For each string, if we count the k-th position from the left end of the string, the value is determined by whether a multiple of the golden ratio falls within the interval (k-1, k). The ratio of A to B likewise converges to the golden mean.</p>
 <p>This example yields the same result (in terms of the length of each string, not the sequence of As and Bs) if the rule (A → AB) is replaced with (A → BA), except that the strings are mirrored.</p>
 <p>This sequence is a locally catenative sequence because G(n)=G(n-1)G(n-2), where G(n) is the n-th generation.</p>
+<h2 id="example-in-processing">Example in Processing</h2>
+<pre><code>String current =<span class="string">"A"</span>;      <span class="comment">//start with axiom</span>
+<span class="keyword">int</span> <span class="keyword">count</span> = <span class="number">0</span>;            <span class="comment">//keep track of how many generations</span>
+
+<span class="keyword">void</span> setup() {
+  <span class="comment">// </span>
+  println(<span class="string">"Generation"</span> + <span class="keyword">count</span> + <span class="string">"; "</span> + current); 
+}
+
+<span class="keyword">void</span> draw() {
+}
+
+
+<span class="keyword">void</span> mousePressed() {
+  String next = <span class="string">""</span>;
+  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; current.length(); i++) {
+    <span class="keyword">char</span> c = current.charAt(i);
+    <span class="keyword">if</span> (c == <span class="string">'A'</span>) {
+      next += <span class="string">"AB"</span>;
+    }  <span class="keyword">else</span> <span class="keyword">if</span> (c == <span class="string">'B'</span>) {
+      next += <span class="string">"A"</span>;
+    }
+  }
+  current = next;
+  <span class="keyword">count</span>++;
+  println(<span class="string">"Generation "</span> + <span class="keyword">count</span> + <span class="string">": "</span> + current);
+}</code></pre>
 
     </div>
 

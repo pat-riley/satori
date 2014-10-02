@@ -5,6 +5,7 @@
 - [Universal Design Elements](/content/design/universal_elements.html)
 - [User Experience](content/design/user_xperience.html)
 - [L-Systems](content/design/l-system.html)
+- [Digital Ecosystem](content/design/digital_ecosystem.html)
 
 
 ### Ecology

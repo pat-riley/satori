@@ -1,0 +1,46 @@
+<!DOCTYPE  html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/index.css" rel="stylesheet">
+    <title>Fractals & Recursion</title>
+  </head>
+  <body>
+
+    <div class="menu">
+      <a href="/index.html">Satori</a>
+    </div>
+    <div class="container">
+      <h1 id="fractals-recursion">Fractals &amp; Recursion</h1>
+<p>The term fractal (from the Latin fractus, meaning “broken”) was coined by the mathematician Benoit Mandelbrot in 1975. In his seminal work “The Fractal Geometry of Nature,” he defines a fractal as “a rough or fragmented geometric shape that can be split into parts, each of which is (at least approximately) a reduced-size copy of the whole.”</p>
+<p>Looking closely at a given section of the tree, we find that the shape of this branch resembles the tree itself. This is known as self-similarity; as Mandelbrot stated, each part is a “reduced-size copy of the whole.”</p>
+<h2 id="recursion">Recursion</h2>
+<p>Let’s begin our discussion of recursion by examining the first appearance of fractals in modern mathematics. In 1883, German mathematician George Cantor developed simple rules to generate an infinite set:</p>
+<h5 id="recursion-example">Recursion Example</h5>
+<pre><code><span class="keyword">void</span> someFunction() {
+    someFunction();
+}</code></pre>
+<p>In fact, this is not only allowed, but it’s quite common (and essential to how we will implement the Cantor set). Functions that call themselves are recursive and good for solving certain problems. For example, certain mathematical calculations are implemented recursively; the most common example is factorial.</p>
+<h5 id="factorial-example">Factorial Example</h5>
+<pre><code><span class="keyword">int</span> factorial(<span class="keyword">int</span> n) {
+    <span class="keyword">int</span> f = <span class="number">1</span>;
+    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) {
+        f = f * (i+<span class="number">1</span>);
+    }
+<span class="keyword">return</span> f;
+}</code></pre>
+<h5 id="recursive-circles">Recursive Circles</h5>
+<pre><code><span class="keyword">void</span> drawCircle(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">float</span> radius) {
+  ellipse(x, y, radius, radius);
+  <span class="keyword">if</span>(radius &gt; <span class="number">2</span>) {
+    radius *= <span class="number">0.75f</span>;
+    drawCircle(x, y, radius);
+  }
+}</code></pre>
+
+    </div>
+
+  </body>
+</html>
