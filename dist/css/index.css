@@ -10,6 +10,9 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.container img {
+  width: 100%;
+}
 
 a {
   color: #00D512;

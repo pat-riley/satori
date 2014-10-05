@@ -6,6 +6,7 @@
 - [User Experience](content/design/user_xperience.html)
 - [L-Systems](content/design/l-system.html)
 - [Digital Ecosystem](content/design/digital_ecosystem.html)
+- [Bauhaus_color](content/design/bauhaus_color.html)
 
 
 ### Ecology
