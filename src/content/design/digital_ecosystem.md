@@ -6,8 +6,9 @@ A map that visualizes the company’s digital ecosystem in a way that clearly il
 
 An ecosystem map gives you insight around the role of each piece of the system, as well as on opportunities to leverage existing assets to achieve the brand’s business goals.
 
-> “The battle of devices has now become a war of ecosystems, where ecosystems include not only the hardware and software of the device, but developers, applications, ecommerce, advertising, search… location-based services, unified communications and many other things. Our competitors aren’t taking our market-share with devices; they are taking our market share with an entire ecosystem. This means we’re going to have to decide how we either build, catalyse or join an ecosystem.”
-- Stephen Elop, CEO Nokia
+> “The battle of devices has now become a war of ecosystems, where ecosystems include not only the hardware and software of the device, but developers, applications, ecommerce, advertising, search… location-based services, unified communications and many other things. Our competitors aren’t taking our market-share with devices; they are taking our market share with an entire ecosystem. This means we’re going to have to decide how we either build, catalyse or join an ecosystem.” - Stephen Elop, CEO Nokia
+
+![eco](eco1.png)
 
 ## Definition
 
