@@ -14,6 +14,9 @@
 
 ### Economics
 - [Economic Schools](content/economics/economic Schools.html)
+- [Chaos Theory](content/economics/chaos_theory.html)
+
+
 
 ### Geometry
 - [Geometry Overview](content/geometry/geometry.html)
